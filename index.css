@@ -3,6 +3,7 @@
     list-style: none;
     display: flex;
     flex-wrap: wrap; /* allows cards to wrap on smaller screens */
+    justify-content: center; /* centers the player cards */
 }
 
 /* Style individual player cards */
@@ -17,17 +18,14 @@
     align-items: center;
     text-align: center;
     transition: transform 0.2s;
+    margin: 10px; /* adds space between cards */
 }
 
-
-
-/*Slight zoom effect on hover to enable the viewing of individual dogs */
+/* Slight zoom effect on hover to enable the viewing of individual players */
 #players li:hover {
     transform: scale(1.05); 
 }
 
-
-             
 /* Style the puppy image */ 
 img {
     width: 100%;
@@ -36,51 +34,76 @@ img {
     margin-bottom: 0.5rem;   
 }
 
-
-
 /* Style the puppy name */
 h3 {
-    font-size: 2.0rem;
+    font-size: 1.75rem; /* adjusted size for clarity */
     color: #333;
     margin: 0.5rem 0;
 }
-
 
 /* Style the puppy breed */
 h4 {
-    font-size: 1.25rem;
-    color: #333;
+    font-size: 1.2rem; /* adjusted size for clarity */
+    color: #555; /* slightly darker for contrast */
     margin: 0.5rem 0;
 }
 
-
-
-#teams {              
+/* Style the teams list */
+#teams {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    width: 600px; 
+    justify-content: space-between; /* allows teams to fill space */
     padding: 1rem;
-    transition: transform 0.2s; /* allows cards to wrap on smaller screens */
 }
 
-/* Style individual player cards */
+/* Style individual team cards */
 #teams li {
-    background-color: #f5f5f5; /* light background for the card */
+    background-color: #f9f9f9; /* light background for team card */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* soft shadow for depth */
-    width: 250px; /* width of each card */
+    width: 100%; /* width of each team card spans full width */
+    max-width: 600px; /* set a maximum width for better layout */
     padding: 1rem;
+    margin: 10px; /* adds space between cards */
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
-    transition: transform 0.2s;
 }
 
-
-
-/*Slight zoom effect on hover to enable the viewing of individual dogs */
+/* Slight zoom effect on hover to enable the viewing of individual teams */
 #teams li:hover {
     transform: scale(1.05); 
+}
+
+/* Style players list inside each team card */
+#teams li ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px; /* space between team info and players */
+    display: flex; /* flex layout for player cards */
+    flex-wrap: wrap; /* allows player cards to wrap on smaller screens */
+    justify-content: space-around; /* space out player cards */
+}
+
+/* Style individual player items in teams */
+#teams li ul li {
+    padding: 1.5rem; /* larger padding for bigger player cards */
+    background-color: #f5f5f5; /* consistent with player cards */
+    border-radius: 10px; /* rounded corners */
+    width: 200px; /* increased width of each player card */
+    margin: 10px; /* space between player items */
+    display: flex;
+    flex-direction: column; /* stack name and details vertically */
+    align-items: center; /* center content */
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* soft shadow for depth */
+}
+
+/* Player images in team cards */
+#teams li ul li img {
+    width: 80%; /* set a fixed width for images within team players */
+    height: auto; /* keep aspect ratio */
+    border-radius: 8px; /* consistent rounded corners */
+    margin-bottom: 0.5rem; /* space below images */
 }
