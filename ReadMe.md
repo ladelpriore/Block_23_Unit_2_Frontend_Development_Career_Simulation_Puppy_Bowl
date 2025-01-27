@@ -1,19 +1,9 @@
-What are we trying to make?
-In this assessment, Calliope is back and has you working on a project for our local humane society. 
+# Block 23, Unit 2 Frontend Development, Career Simulation: Puppy Bowl
+Use API documentation to build out a functional client side for a humane society's list of puppies. Request data from the API end points, render that data on the front end. The front end should allow the user to: View the roster, Observe a player's details, See teams of players, Players compete, Add/remove players from roster
 
- 
-
-Based on Calliope's email:
-
-You are working with the humane society to add a mini-game to their website.
-The game should allow visitors to see teams of puppies compete in a "puppy bowl".
-Someone has already built out the API.
-Overall, your job is to build out a functional client side. Request data from the API, then render that data on the front end. The front end should allow the user to: 
-
-View the roster.
-Observe a player's details.
-Etc.
-See teams of players
-Players compete
-Add/remove players from roster
-All the data you need is available through the API. Your job is to leverage it.
+# Instructions
+Open up the docs for the the Puppy Bowl API.Links to an external site.
+Review the provided Puppy Bowl API documents to learn about what endpoints are provided, how to access them, and what data they return.
+Create a GitHub repository for your project called puppy-bowl.
+Don't forget to create branches for each feature.
+Add CSS after each branch is finished to make each feature look good.
